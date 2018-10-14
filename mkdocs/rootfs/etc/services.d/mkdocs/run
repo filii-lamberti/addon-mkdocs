@@ -1,0 +1,16 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: MkDocs
+# Runs MkDocs
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+# Build the docs
+mkdocs build --clean
+
+# Go to site directory
+cd site
+
+# And finally serve it
+exec python3 -m http.server 8000

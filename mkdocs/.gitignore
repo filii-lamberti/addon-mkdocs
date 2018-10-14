@@ -1,0 +1,6 @@
+# macOS internals
+.DS_Store
+
+# Distribution files
+dist/
+site/
