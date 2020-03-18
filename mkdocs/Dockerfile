@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:2.1.2
+ARG BUILD_FROM=hassioaddons/base:7.0.3
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -22,9 +22,6 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
-
-# Exposing the application's server port
-EXPOSE 8000
 
 # Set working directory
 WORKDIR /share/mkdocs
