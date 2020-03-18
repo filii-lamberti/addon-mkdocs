@@ -16,7 +16,9 @@
   "ports": {
     "8000/tcp": 8000
   },
-  "map": ["share:rw"],
+  "map": [
+    "share:rw"
+  ],
   "options": {},
   "schema": {},
   "image": "tjorim/mkdocs-{arch}"
