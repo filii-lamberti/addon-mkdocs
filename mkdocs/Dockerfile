@@ -13,7 +13,7 @@ WORKDIR /tmp
 
 # Install requirements for add-on and app dependencies
 RUN \
-    apk add --no-cache python3=3.6.6-r0 \
+    apk add --no-cache python3=3.8.2-r0 \
     && python3 -m ensurepip \
     && pip3 install -U pip \
     && rm -r /usr/lib/python*/ensurepip \
