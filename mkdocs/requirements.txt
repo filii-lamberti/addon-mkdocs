@@ -1,5 +1,6 @@
 # Direct dependencies
-mkdocs>=1
-mkdocs-material>=3.0
-Pygments>=2.2
-pymdown-extensions>=4.12
+markdown>=3.2
+mkdocs-material>=5.0
+mkdocs>=1.1
+Pygments>=2.4
+pymdown-extensions>=7.0

@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:7.0.3
+ARG BUILD_FROM=hassioaddons/base:7.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -35,12 +35,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="MkDocs" \
-    io.hass.description="MkDocs documentation add-on for Hass.io" \
+    io.hass.description="A MkDocs documentation add-on for Hass.io" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Jorim Tielemans <tielemans.jorim@gmail.com>" \
-    org.label-schema.description="MkDocs documentation add-on for Hass.io" \
+    org.label-schema.description="A MkDocs documentation add-on for Hass.io" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="MkDocs" \
     org.label-schema.schema-version="1.0" \
