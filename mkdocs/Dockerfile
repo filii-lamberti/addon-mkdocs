@@ -23,9 +23,6 @@ RUN \
 # Copy root filesystem
 COPY rootfs /
 
-# Set working directory
-WORKDIR /share/mkdocs
-
 # Build arugments
 ARG BUILD_ARCH
 ARG BUILD_DATE
