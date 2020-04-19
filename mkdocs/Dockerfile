@@ -13,12 +13,18 @@ WORKDIR /tmp
 
 # Install requirements for add-on and app dependencies
 RUN \
-    apk add --no-cache python3=3.8.2-r0 \
+    apk add --no-cache --virtual .build-dependencies \
+        build-base=0.5-r1 \
+    \
+    && apk add --no-cache \
+        python3=3.8.2-r0 \
+    \
     && python3 -m ensurepip \
     && pip3 install -U pip \
     && rm -r /usr/lib/python*/ensurepip \
     && pip3 install -r requirements.txt \
-    && rm -rf /tmp/*
+    && rm -rf /tmp/* \
+    && apk del --no-cache --purge .build-dependencies
 
 # Copy root filesystem
 COPY rootfs /
