@@ -1,6 +1,6 @@
 # Direct dependencies
 markdown==3.2.2
-mkdocs-material==5.3.3
+mkdocs-material==5.4.0
 mkdocs==1.1.2
 Pygments==2.6.1
 pymdown-extensions==7.1
