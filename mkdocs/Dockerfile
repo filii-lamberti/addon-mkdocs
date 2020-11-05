@@ -17,7 +17,7 @@ RUN \
         build-base=0.5-r2 \
     \
     && apk add --no-cache \
-        python3-dev=3.8.2-r1 \
+        python3-dev=3.8.5-r0 \
     \
     && python3 -m ensurepip \
     && pip3 install -U pip \
