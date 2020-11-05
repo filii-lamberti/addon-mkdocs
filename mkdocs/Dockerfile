@@ -14,7 +14,7 @@ WORKDIR /tmp
 # Install requirements for add-on and app dependencies
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        build-base=0.5-r1 \
+        build-base=0.5-r2 \
     \
     && apk add --no-cache \
         python3-dev=3.8.2-r1 \
