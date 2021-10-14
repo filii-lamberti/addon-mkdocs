@@ -1,5 +1,5 @@
 # Direct dependencies
-markdown==3.3.3
+markdown==3.3.4
 mkdocs-material==5.5.13
 mkdocs==1.2.3
 Pygments==2.10.0
